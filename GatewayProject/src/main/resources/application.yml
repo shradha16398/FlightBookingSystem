@@ -1,0 +1,169 @@
+server.port: 9000
+spring:
+
+  cloud:
+    gateway:
+      routes:
+      - id: Booking
+        uri: http://localhost:8082/
+        predicates:
+        - Path=/user/**
+        
+      - id: FlightDetails
+        uri: http://localhost:8081/
+        predicates:
+        - Path=/admin/**
+     
+      - id: Payment
+        uri: http://localhost:8083/
+        predicates:
+        - Path=/pay/**
+        
+      - id: Search
+        uri: http://localhost:8084/
+        predicates:
+        - Path=/user/**
+        
+      - id: Checkin
+        uri: http://localhost:8086/
+        predicates:
+        - Path=/checkIn/**
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      
+        
+            
+#      - id: Flight-Service
+#        uri: http://localhost:8086/
+#        predicates:
+#        - Path=/fares/**
+#        
+#            
+#      - id: Booking-Service1
+#        uri: http://localhost:8087/
+#        predicates:
+#        - Path=/book/**
+#        
+#             
+#      - id: Passenger
+#        uri: http://localhost:8081/
+#        predicates:
+#        - Path=/passanger/**
+#        
+#      - id: Payment
+#        uri: http://localhost:8083/
+#        predicates:
+#        - Path=/pay/**
+#        
+#        
+#        
+#        
+#        
+#        
+#        
+#        
+#        
+#        
+#        
+#        
+#        
+#        
+        
+        
+        
+        
+        
+#        
+#      - id: Airport
+#        uri: http://localhost:8085/
+#        predicates:
+#        - Path=/airport/list/{id}/**
+#        
+#      - id: Airport
+#        uri: http://localhost:8085/
+#        predicates:
+#        - Path=/airport/addrecord/**
+#        
+#      - id: Airport
+#        uri: http://localhost:8085/
+#        predicates:
+#        - Path=/airport/delete/{id}/**
+#        
+#      - id: Airport
+#        uri: http://localhost:8085/
+#        predicates:
+#         - Path=/airport/getflightdata/{destination}/**   
+#         
+        
+#      - id: Flight-Service
+#        uri: http://localhost:8086/
+#        predicates:
+#        - Path=/fares/list/{destination}/**
+#        
+#      - id: Flight-Service
+#        uri: http://localhost:8086/
+#        predicates:
+#        - Path=/fares/addrecord/**
+#     
+#      - id: Booking-Service1
+#        uri: http://localhost:8087/
+#        predicates:
+#        - Path=/book/list/{id}**  
+#        
+#      - id: Booking-Service1
+#        uri: http://localhost:8087/
+#        predicates:
+#        - Path=/book/addrecord/**   
+#        
+#      - id: Booking-Service1
+#        uri: http://localhost:8087/
+#        predicates:
+#        - Path=/book/delete/{id}/**   
+#
+#      - id: Booking-Service1
+#        uri: http://localhost:8087/
+#        predicates:
+#        - Path=/book/getpassengerdata/{Id}/**   
+#
+#
+#      - id: Booking-Service1
+#        uri: http://localhost:8087/
+#        predicates:
+#        - Path=/book/getflightdata/{destination}/**   
+#     
+#     
+#        
+#      - id: Passenger
+#        uri: http://localhost:8081/
+#        predicates:
+#        - Path=/passanger/list/**
+#        
+#        
+#      - id: Passenger
+#        uri: http://localhost:8081/
+#        predicates:
+#        - Path=/passanger/findAll/{id}/**
+#        
+#        
+#        
+#      - id: Passenger
+#        uri: http://localhost:8081/
+#        predicates:
+#        - Path=/passanger/delete/{id}/**
+#         
+          
+      
+
+      
