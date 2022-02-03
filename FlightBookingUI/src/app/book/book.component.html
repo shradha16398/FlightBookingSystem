@@ -1,0 +1,105 @@
+<!-- <app-flight-details></app-flight-details> -->
+<body>
+    
+  
+        
+    <div class = "container">
+       
+           
+        <div class = "card-header">
+            <b>Enter Details For Book Flight</b> </div>
+        </div>
+       
+                    <div class = "card-body">
+                        <form [formGroup]= "bookform" (ngSubmit)= "bookNow();bookform.reset();" >
+                              
+                            <div class = "booking-form">
+                                <Label for = "name" class = "form-label"><b>Name :</b></Label>
+                                <input type = "text" formControlName = "name" class = "form-control" id = "name" name = "name" >
+                                <div class = "text-danger" id = "nameError"
+                                    *ngIf="!bookform.controls.name.valid && bookform.controls.name.dirty">
+                                    <span *ngIf = "bookform.controls.name.errors.required" class = "text-danger">Field Required</span>
+                                </div> 
+                            </div>
+                            <div class = "booking-form">
+                                <Label for = "adults" class = "form-label"> <b> Adults : </b></Label>
+                                <input type = "number" formControlName = "adults" class = "form-control" id = "adult" name = "adult" >
+                                <div class = "text-danger" id = "cardError"
+                                    *ngIf="!bookform.controls.adults.valid && bookform.controls.adults.dirty ">
+                                    <span *ngIf = "bookform.controls.adults.errors.required" class = "text-danger">Field Required</span>
+                                </div> 
+                            </div>
+                            
+                            <div class = "booking-form">
+                                <Label for = "children" class = "form-label"> <b> Children :</b>  </Label>
+                                <input type = "number" formControlName = "children" class = "form-control" id = "children" name = "children" >
+                                <div class = "text-danger" id = "childrenError"
+                                    *ngIf="!bookform.controls.children.valid && bookform.controls.children.dirty">
+                                    <span *ngIf = "bookform.controls.children.errors.required" class = "text-danger">Field Required</span>
+                                </div> 
+                            </div>
+                            <div class = "booking-form">
+                                <Label for = "startPoint" class = "form-label"> <b>Start Point : </b> </Label>
+                                <input type = "text" formControlName = "startPoint" class = "form-control" id = "startPoint" name = "startPoint" >
+                                <div class = "text-danger" id = "startpointError"
+                                *ngIf="!bookform.controls.startPoint.valid && bookform.controls.startPoint.dirty">
+                                <span *ngIf = "bookform.controls.startPoint.errors.required" class = "text-danger">Field Required</span>
+                            </div> 
+                            </div>
+                            
+                            <div class = "booking-form">
+                                <Label for = "endPoint" class = "form-label"><b>End Point : </b> </Label>
+                                <input type = "text" formControlName = "endPoint" class = "form-control" id = "endPoint" name = "endPoint" >
+                                <div class = "text-danger" id = "endPointError"
+                                    *ngIf="!bookform.controls.endPoint.valid && bookform.controls.endPoint.dirty">
+                                    <span *ngIf = "bookform.controls.endPoint.errors.required" class = "text-danger">Field Required</span>
+                                </div> 
+                            </div>
+                            
+                            
+                          
+                           
+                            
+                            
+                          
+                            
+                        <div class = "booking-form">
+                            <Label for = "sex" class = "form-label"><b>Gender : </b></Label>
+                            <input type = "text" formControlName = "sex" class = "form-control" id = "sex" name = "sex" >
+                            <div class = "text-danger" id = "sexError"
+                            *ngIf="!bookform.controls.sex.valid && bookform.controls.sex.dirty">
+                            <span *ngIf = "bookform.controls.sex.errors.required" class = "text-danger">Field Required</span>
+                        </div> 
+                            
+                        </div>
+                        
+                        <div class = "booking-form">
+                            <Label for = "flightNo" class = "form-label"><b>flight Number :</b> </Label>
+                            <input type = "number" formControlName = "flightNo" class = "form-control" id = "flightNo" name = "flightNo">
+                            <div class = "text-danger" id = "flightNoError"
+                            *ngIf="!bookform.controls.flightNo.valid && bookform.controls.flightNo.dirty">
+                            <span *ngIf = "bookform.controls.flightNo.errors.required" class = "text-danger">Field Required</span>
+                        </div> 
+                        </div>
+                    
+                        
+                       
+                        <div class = "booking-form">
+                            <Label for = "classType" class = "form-label"> <b>Class Type :</b> </Label>
+                            <input type = "text" formControlName = "classType" class = "form-control" id = "classType" name = "classType" >
+                            <div class = "text-danger" id = "classTypeError"
+                                *ngIf="!bookform.controls.classType.valid && bookform.controls.classType.dirty">
+                                <span *ngIf = "bookform.controls.classType.errors.required" class = "text-danger">Field Required</span>
+                            </div> 
+                        </div>
+                         
+                        <div class = "form-group">
+                            <button mat-stroked-button type = "submit" class = "btn1 btn-primary form-control" onsubmit=""> Book Now</button> 
+                        </div>
+                        
+                    </form>
+                </div>
+       
+
+
+</body>

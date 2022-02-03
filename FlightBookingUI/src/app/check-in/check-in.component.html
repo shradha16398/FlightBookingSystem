@@ -1,0 +1,40 @@
+
+
+
+<body>
+    
+
+    
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-md-6 offset-md-3">
+                <div class = "card">
+                    <div class = "card-header">
+                        <h3 class = "test text-center"> <b>Enter Details for checking in</b> </h3>
+                    </div>
+                    <div class = "card-body">
+                        <form [formGroup]= "checkinform" (ngSubmit)="getcheckin()" >     
+                        <div class = "form-group">
+                            <Label for = "pnrNo" class = "form-label"><b>PNR number: </b></Label>
+                            <input type = "number" [(ngModel)]="pnrNo" formControlName = "pnrNo" class = "form-control" id = "pnrNo" name = "pnrNo" value = {{pnrNo}} >
+                            <div class = "text-danger" id = "prnError"
+                            *ngIf="!checkinform.controls.pnrNo.valid && checkinform.controls.pnrNo.dirty">
+                            <span *ngIf = "checkinform.controls.pnrNo.errors.required" class = "text-danger">Field Required</span>
+                        </div> 
+                            
+                        </div>
+                    
+                        
+                        <div class = "form-group">
+                            <button mat-stroked-button type = "submit" class = "btn1 btn-primary form-control" routerlink = "/search"onsubmit=""> DONE</button> 
+                        </div>
+                        
+                        
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body> 

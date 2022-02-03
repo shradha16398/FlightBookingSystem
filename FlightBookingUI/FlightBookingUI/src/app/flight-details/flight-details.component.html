@@ -1,0 +1,44 @@
+<body>
+    <br><br>
+    
+    <div class = "container">
+       
+        <h1>Flight Details</h1>
+        <table class = "table tables-striped">
+            <thead>
+                <tr>
+                    <th>flightNo</th>
+                    <th>startPoint</th>
+                    <th>endPoint</th>
+                    <th>arrivalTime</th>
+                    <th>deptTime</th>
+                    <th>duration</th>
+                    <th>noOfSeats</th>
+                    <th>economyClass</th>
+                    <th>premiumEconomy</th>
+                    <th>businessClass</th>
+                    <th>flightDate</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let flightDetails of flight">
+                    <td>{{flightDetails.flightNo}}</td>
+                    <td>{{flightDetails.startPoint}}</td>
+                    <td>{{flightDetails.endPoint}}</td>
+                    <td>{{flightDetails.arrivalTime}}</td>
+                    <td>{{flightDetails.deptTime}}</td>
+                    <td>{{flightDetails.duration}}</td>
+                    <td>{{flightDetails.noOfSeats}}</td>
+                    <td>{{flightDetails.economyClass}}</td>
+                    <td>{{flightDetails.premiumEconomy}}</td>
+                    <td>{{flightDetails.businessClass}}</td>
+                    <td>{{flightDetails.flightDate}}</td>
+                    
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <button class = "btn1 btn-primary form-control"[routerLink]= "['/book']">Book the flight</button>
+    </div>
+    
+</body>

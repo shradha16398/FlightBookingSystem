@@ -1,0 +1,165 @@
+
+/* @import url('https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css%27'); */
+
+
+body{
+    background:  url(/../../assets/imgs/q4.jpeg);  
+    margin-top: 2px;
+    
+}
+.input-grp
+{
+    width: 151px;
+    display: inline-block;
+    padding: 10px
+}
+.booking-form
+{
+    padding: 0 6px 6px;
+}
+.booking-form-box
+{
+    max-width: 350px;
+    border: 1px solid #acafb3;
+    margin: 100% auto;
+    
+}
+.booking-form label
+{
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-size: 15px;
+    color: rgb(241, 216, 216);
+    margin: right 100px; ;
+}
+.card-body {
+    background-color: rgb(10, 9, 9);
+    height:450px;
+    width: 350px;
+   margin-left: 240px;
+  
+    padding: 10px;
+    opacity: 0.7;
+    
+    margin-top: 30px;
+}
+.card-header {
+    margin-top: 60px;
+    padding: 20px;
+    font-size: 20px;
+margin-left: 230px;
+  
+}
+
+.a{text-align: center;}
+
+
+
+.btn1{
+   
+    background-color: lightskyblue;
+    color: rgb(0, 0, 0);
+    padding: 3px 7px;
+    margin: 9px 0;
+    border: 7px solid;
+    border: 3px;
+    cursor: pointer;
+    font-family: frutiger45;
+   
+    
+}
+
+.btn1:hover{
+    border: 6px rgb(12, 11, 10);
+    background-color: rgb(61, 159, 219);
+    padding: 4px;
+}
+
+.btn{
+    background-color: lightskyblue; 
+    color: rgb(0, 0, 0);
+    padding: 6px 10px;
+    border: 0.6px ;
+    margin-left: 600px;
+    margin-bottom: 20px;
+    font-family: frutiger45;
+}
+
+.btn:hover{
+    border: 2px rgb(12, 11, 10);
+    background-color: rgb(61, 159, 219);
+    padding: 7.5px;
+
+}
+
+
+
+.form-group{
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    font-family: frutiger45;
+}
+
+.test{
+    
+    border: 2px solid black;
+    background-color: rgb(0, 0, 0);
+    margin-left: 100px;
+    color: transparent;
+    opacity: 0.75;
+    margin-right: 100px;
+    margin-bottom: 40px;
+    margin-top: 15px;
+    font-family: frutiger45;
+
+  }
+  /* input{
+      width: 50%;
+  } */
+  .form-control {
+    
+    position: relative;
+
+}
+.form-label{
+   align-items: center;
+   font-family: frutiger45;
+}
+
+Label{
+    width: 100px;
+    display: inline-block;
+}
+.text-danger{
+    color: red;
+    margin-left: 5px;
+    
+}
+
+.form-group{
+    display: flex;
+    margin-top: 1.5px;
+    /* flex-direction: row; */
+}
+p{
+    color: white;
+}
+
+/* .card{
+    display: block;
+    border: brown;
+    background-color: burlywood;
+
+} */
+/* label{
+   flex: auto;
+   margin-right: 20px;
+   width: 100%;
+} */
+
+
+
+
+
+

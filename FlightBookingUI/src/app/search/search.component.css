@@ -1,0 +1,37 @@
+
+
+
+body{
+    background:  url(/../../assets/imgs/AA.jpg);  
+    margin-top: 2px;
+
+    align-items: center;
+    text-align: center;
+}
+table, th, td {
+    border: 1px solid black;
+    /* margin: 3px; */
+    background-color: rgba(197, 206, 180, 0.74);
+     margin-left: 250px; 
+    margin-top: 20px;
+    text-align: center;
+    align-content: center;
+    table-layout: auto;
+}
+nav{
+    border: black solid;
+    width: 300px;
+    height: 100px;
+    margin-left: 490px;
+    margin-top: 65px;
+    background-color:rgba(197, 206, 180, 0.74) ;
+}
+.header{
+    margin-left: 70px;
+    margin-top: 5px;
+}
+.form-control{
+    margin-left: 23px;
+    border: solid black;
+    width: 250px;
+}

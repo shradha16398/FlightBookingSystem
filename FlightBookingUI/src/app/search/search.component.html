@@ -1,0 +1,109 @@
+
+
+  
+    
+
+
+<!-- <form class="example-form">
+<mat-form-field class="example-full-width">
+<span matPrefix> </span>
+<input type="tel" matInput placeholder="Search" name= "search" [(ngModel)]= "searchBar">
+<button matSuffix mat-button><mat-icon >search</mat-icon></button>
+</mat-form-field>
+<br/>
+{{searchBar}}
+</form> -->
+
+
+
+
+    <body>
+    
+        <nav class="nav">
+            <div class="header"><h1>Status Of User</h1></div>
+    <input class="form-control" type="name" name="name" [(ngModel)]="name" (ngModelChange)="SearchbyPnr()"
+    placeholder="Enter Name To Search Deatils">
+    </nav>
+        
+        
+        <div class = "container">
+            
+            <h2> <span>Passanger Details</span> </h2>
+    
+    <!-- <nav class="nav">
+    <input class="form-control" type="text" name="flightNo" [(ngModel)]="flightNo" (ngModelChange)="Search()"
+    placeholder="Search Flight By Flight No">
+    </nav> -->
+    
+            <table class = "table tables-striped">
+                <thead>
+
+                    <!-- {
+                        "pnrNo": 7513990040,
+                        "seatNo": 3,
+                        "name": "Shraddha",
+                        "flightNo": 123,
+                        "startPoint": "Delhi",
+                        "endPoint": "lADAK",
+                        "deptTime": "10:45am",
+                        "flightDate": "12/12/2021",
+                        "duration": "2hours",
+                        "sex": null,
+                        "classType": "businessClass",
+                        "payment": "Successful"
+                      }, -->
+
+
+                    <tr>
+                        <th>PNR No</th>
+                        <th>SeatNo</th>
+                        <th>name</th>
+                        <th>flightNo</th>
+                        <th>startPoint</th>
+                        <th>endPoint</th>
+                        <th>deptTime</th>
+                        <th>flightDate</th>
+                        <th>duration</th>
+                        <!-- <th>Gender</th> -->
+                        <th>ClassType</th>
+                        <th>Payment</th>
+
+                       
+                        <!-- <th>noOfSeats</th>
+                        <th>economyClass</th>
+                        <th>premiumEconomy</th>
+                        <th>businessClass</th>
+                         -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let flightDetails of search">
+                        <td>{{flightDetails.pnrNo}}</td>
+                        <td>{{flightDetails.seatNo}}</td>
+                        <td>{{flightDetails.name}}</td>
+                        <td>{{flightDetails.flightNo}}</td>
+                        <td>{{flightDetails.startPoint}}</td>
+                        <td>{{flightDetails.endPoint}}</td>
+                        <td>{{flightDetails.deptTime}}</td>
+
+                        <td>{{flightDetails.flightDate}}</td>
+                       
+                        <td>{{flightDetails.duration}}</td>
+
+
+                        <!-- <td>{{flightDetails.sex}}</td> -->
+                        <td>{{flightDetails.classType}}</td>
+                        <td>{{flightDetails.payment}}</td>
+                        <!-- <td>{{flightDetails.businessClass}}</td>
+                        <td>{{flightDetails.flightDate}}</td>
+                         -->
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <!-- <button mat-stroked-button class = "btn1 btn-primary form-control"[routerLink]= "['/book']">Book the flight</button> -->
+        </div>
+        
+        
+    
+    </body>

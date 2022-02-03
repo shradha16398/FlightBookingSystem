@@ -1,0 +1,119 @@
+
+<!-- <nav class="navbar">
+    <h5>Enter Your Payment Details</h5>
+    
+  </nav> -->
+  <head>
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        
+     
+           
+       
+    <div class = "card-header">
+        Make Payment!!! </div>
+
+    
+                    <div class = "card-body">
+                        <section class="booking-form">
+                            <form [formGroup]= "paymentForm" (ngSubmit)= "payNow();paymentForm.reset();" >
+                                
+                                <div class = "booking-form" >
+                                    <Label for = "cardNo" class = "form-label">Card Number : </Label>
+                                    <input type = "string" pattern="^\d{16}$" [class.is-invalid]= "paymentForm.get('cardNo').inavlid && paymentForm.get('cardNo').touched"
+                                    formControlName = "cardNo" class = "form-control" id = "cardNo" name = "cardNo" required >
+                                   
+                                    <div *ngIf="paymentForm.get('cardNo').invalid && paymentForm.get('cardNo').touched"></div>
+                                    <!-- <small *ngIf="paymentForm.get('pnrNo').errors?.['required']" 
+                                    class="text-danger">PNR num is required</small> -->
+                                    <small *ngIf="paymentForm.get('cardNo').errors?.['pattern']" 
+                                    class="text-danger">card number must be 16 digits</small>
+                                    </div>
+
+                                    <span *ngIf = "paymentForm.controls.cardNo"></span>
+                                <!-- </div> -->
+                                
+                                <!-- <div class = "form-group">
+                                    <Label for = "age" class = "form-label">Age  </Label>
+                                    <input type = "number" formControlName = "age" class = "form-control" id = "age" name = "age" >
+                                    <span *ngIf = "bookform.controls.age"></span>
+                                </div> -->
+                                
+                                <div class = "booking-form">
+                                    <Label for = "pnrNo" class = "form-label">PNR Number :</Label>
+                                    <input type = "number" pattern="^\d{10}$" [class.is-invalid]= "paymentForm.get('classType').inavlid && paymentForm.get('classType').touched"
+                                    formControlName = "pnrNo" class = "form-control" id = "pnrNo" name = "pnrNo" >
+
+                                  
+                                      <div *ngIf="paymentForm.get('pnrNo').invalid && paymentForm.get('pnrNo').touched"></div>
+                                      <!-- <small *ngIf="paymentForm.get('pnrNo').errors?.['required']" 
+                                      class="text-danger">PNR num is required</small> -->
+                                      <small *ngIf="paymentForm.get('pnrNo').errors?.['pattern']" 
+                                      class="text-danger">PNR num must be 10 digits</small>
+                                   </div>
+                                    <span *ngIf = "paymentForm.controls.pnrNo"></span>
+                              
+                                <div class = "booking-form">
+                                    <Label for = "classType" class = "form-label">classType : </Label>
+                                    <input type = "text" [class.is-invalid]= "paymentForm.get('classType').inavlid && paymentForm.get('classType').touched" 
+                                    formControlName = "classType" class = "form-control" id = "classType" name = "classType" >
+                                    <small [class.d-none]="paymentForm.get('classType').valid ||
+                                    paymentForm.get('classType').untouched" class="text-danger">Class Type is required</small> 
+
+                                    <span *ngIf = "paymentForm.controls.classType"></span>
+                                </div>
+                                
+                                <div class = "booking-form">
+                                    <Label for = "cvv" class = "form-label">CVV :</Label>
+                                    <input type = "number" pattern="^\d{3}$" [class.is-invalid]= "paymentForm.get('cvv').inavlid && paymentForm.get('cvv').touched"
+                                    formControlName = "cvv" class = "form-control" id = "cvv" name = "cvv" >
+                                    <div *ngIf="paymentForm.get('cvv').invalid && paymentForm.get('cvv').touched"></div>
+                                    <!-- <small *ngIf="paymentForm.get('pnrNo').errors?.['required']" 
+                                    class="text-danger">PNR num is required</small> -->
+                                    <small *ngIf="paymentForm.get('cvv').errors?.['pattern']" 
+                                    class="text-danger">card number must be 3 digits</small>
+                                    </div>
+                                    <span *ngIf = "paymentForm.controls.cvv"></span>
+                                <!-- </div> -->
+                                
+                                <div class = "booking-form">
+                                    <Label for = "bankName" class = "form-label">Bank Name :</Label>
+                                    <input type = "text" [class.is-invalid]= "paymentForm.get('bankName').inavlid && paymentForm.get('bankName').touched" 
+                                    formControlName = "bankName" class = "form-control" id = "bankName" name = "bankName" >
+                                    <small [class.d-none]="paymentForm.get('bankName').valid ||
+                                    paymentForm.get('bankName').untouched" class="text-danger">Bank Name is required</small> 
+
+                                    <span *ngIf = "paymentForm.controls.bankName"></span>
+                                </div>
+                                
+                                  
+                                <div class = "form-group">
+                                    <button mat-stroked-button type = "submit" class = "btn1 btn-primary form-control" onsubmit=""> pay Now</button> 
+                                </div>
+                                
+                        
+                                
+                                
+                                
+                            <!-- </form> -->
+                        <!-- </section> -->
+                    <!-- </div> -->
+              
+    
+        <!-- </body> -->
+                
+               
+
+          
+    
+
+
+                
+         

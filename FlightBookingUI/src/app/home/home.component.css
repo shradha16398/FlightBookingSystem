@@ -1,0 +1,268 @@
+
+
+
+body{
+  background:  url(/../../assets/imgs/q1.jpg);  
+margin-top: 2px;
+/* opacity:  0.9; */
+/* overflow-x: hidden; */
+/* background-color: rgb(212, 28, 28); */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', arial, sans-serif;
+}
+
+
+ul {
+list-style: none;
+margin: 70px;
+
+}
+
+p {
+font-size: 13px;
+line-height: 24px;
+}
+
+/* .section-heading h2 {
+margin-top: 0px;
+margin-bottom: 60px;
+text-align: center;
+font-size: 24px;
+text-transform: uppercase;
+font-weight: 900;
+color: #121212;
+} */
+
+/* .page-direction-button a {
+display: inline-block;
+line-height: 60px;
+width: 270px;
+height: 60px;
+border-top-right-radius: 5px;
+border-top-left-radius: 5px;
+background-color: #ffe165;
+font-size: 18px;
+font-weight: 700;
+color: #121212;
+text-align: center;
+text-decoration: none;
+letter-spacing: 0px;
+} */
+
+/* .page-direction-button a i {
+margin-right: 5px;
+font-size: 20px;
+} */
+
+/* .primary-button a {
+text-decoration: none;
+margin-top: 15px;
+width: auto;
+padding: 0px 18px;
+height: 36px;
+background-color: #ffe165;
+font-size: 13px;
+color: #121212;
+font-weight: 600;
+display: inline-block;
+text-align: center;
+line-height: 36px;
+} */
+
+/* .owl-pagination {
+margin-top: -95px;
+opacity: 1;
+display: inline-block;
+position: absolute;
+right: 0px;
+z-index: 9999;
+background-color: rgba(255, 255, 255, 0.25);
+height: 80px;
+line-height: 80px;
+padding: 0px 15px;
+}
+
+.owl-page span {
+display: block;
+width: 10px;
+height: 10px;
+margin: 0px 5px;
+filter: alpha(opacity=50);
+opacity: 0.5;
+-webkit-border-radius: 20px;
+-moz-border-radius: 20px;
+border-radius: 20px;
+background: #ffe165;
+} */
+
+.banner .social-links {
+list-style: none;
+margin-top: 0px;
+padding-right: 100px;
+}
+
+.banner .social-links li {
+display: block;
+text-align: center;
+margin: 20px 10px;
+transition: all 0.5s;
+}
+
+.banner .social-links a {
+margin-top: 100;
+display:block;
+opacity: 2;
+transition: all 0.5s;
+text-align: left;
+text-decoration:none;
+text-transform:uppercase;
+letter-spacing: 0.5px;
+color:rgb(14, 13, 13);
+font-size: 17px;
+font-weight: 300;
+display: inline-block;
+width: 100%;
+height: 60px;
+line-height: 60px;
+padding-left: 20px;
+background-color: rgba(199, 212, 174, 0.74);
+}
+
+.banner .social-links a em {
+font-style: normal;
+font-weight: 900;
+
+}
+
+.banner .social-links a i {
+float: right;
+background-color: rgba(250, 250, 250, 0.2);
+height: 50px;
+width: 50px;
+line-height: 60px;
+text-align: center;
+font-size: 36px;
+}
+
+.banner .social-links li:hover {
+background-color:cadetblue;
+padding: 5px;
+}
+
+.banner .social-links li:hover i {
+  background-color:cadetblue;
+padding: 5px;
+}
+
+
+.banner {
+background-image: url(/../../assets/imgs/q1.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+text-align: center;
+}
+
+
+.left-side {
+
+}
+.tabs-content{
+width: 50%;
+}
+.navbar{
+top: 0px;
+}
+.banner{
+height: 100vh;
+}
+
+
+.banner .page-direction-button {
+margin-top: 120px;
+}
+.banner .logo img {
+padding-top: 60px;
+max-width: 100%;
+}
+.banner .tabs-content {
+margin-top: 100px;
+  margin-bottom: 0px;
+font-size: 50px;
+color: #fff;
+font-weight: 700;
+  
+ 
+}
+.nav2{
+ 
+  height: 30px;
+  width: 98.3%;
+  /* background-color: cadetblue; */
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.contact{
+  position: absolute;
+  right: 20px;
+
+}
+.about{
+  position: absolute;
+  right:  130px;
+ 
+  
+}
+.about:hover{
+  background-color:  transparent ;
+  border: 2px solid rgb(12, 11, 10);
+  padding: 2px;
+}
+.contact:hover{
+ background-color:  transparent ;
+  border: 2px solid rgb(12, 11, 10);
+  padding: 2px;
+}
+
+/* .banner .tabs-content h4 {
+margin-top: 0px;
+margin-bottom: 0px;
+font-size: 24px;
+color: #fff;
+font-weight: 700;
+} */
+/* banner .logo img {
+  padding-top: 40px;
+  max-width: 100%;
+}
+banner .logo img {
+  padding-top: 40px;
+  max-width: 100%;
+} */
+/* .fa-facebook-square:before {
+  content: "\f082";
+}
+.fa-facebook-f:before,
+.fa-facebook:before {
+content: "\f09a";
+}
+.fa-facebook-official:before {
+  content: "\f230";
+}
+.fa-youtube-square:before {
+  content: "\f166";
+}
+.fa-youtube:before {
+  content: "\f167";
+}
+.fa-youtube-play:before {
+  content: "\f16a";
+}
+.fa-instagram:before {
+  content: "\f16d";
+}
+*/

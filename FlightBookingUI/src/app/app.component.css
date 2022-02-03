@@ -1,0 +1,268 @@
+/* 
+@import url('https://fonts.googleapis.com/css2?family=Pushster&display=swap'); */
+.na{
+    color: black;
+   
+}
+.navbar{
+    height: 40px;
+    border: 2px solid black;
+    width: 97.3%;
+    background-color: cadetblue;
+    font-weight: bold;
+    margin-left: 5px; 
+    padding: 10px;
+    display: flex;
+    
+}
+
+/* 
+@import url('https://fonts.googleapis.com/css2?family=Pushster&display=swap'); */
+.na{
+    color: black;
+    width: 350px;
+    float: left;
+   
+}
+.navbar{
+    border: 1px solid black;
+    width: 100%;
+    background-color: rgb(241, 246, 247);
+    font-weight: bold;
+   padding: 10px;
+    position: fixed;
+    z-index: 99;
+    top: 0px;
+}
+.navbar .na h1{
+    margin-bottom: 0px;
+}
+.nav_viewheader{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    float: right;
+    
+}
+.nav_viewheader li{
+    float: left;
+}
+
+
+.nav2{
+   
+    height: 30px;
+    width: 98.3%;
+    margin-left: 10px;
+    margin-top: 0px;
+}
+.contact{
+    position: absolute;
+    right: 20px;
+}
+
+.about{
+    position: absolute;
+    right:  130px;
+}
+
+/* .contact{
+    position: absolute;
+    right: 20px;
+}
+
+.about{
+    position: absolute;
+    right:  130px;
+} */
+
+.book{
+    position: absolute;
+    right:  15px;
+}
+
+.flight{
+    position: absolute;
+    right:  140px;
+}
+.home{
+    position: absolute;
+    right:  253px;
+}
+
+.admin:hover{
+    background-color:  transparent ;
+    border: 2px solid rgb(12, 11, 10);
+    padding: 2px;
+}
+.admin{
+    position: absolute;
+    right:  320px;
+}
+
+.home:hover{
+    background-color:  transparent ;
+    border: 2px solid rgb(12, 11, 10);
+    padding: 2px;
+}
+
+
+.flight:hover{
+    background-color: transparent;
+    border: 2px solid rgb(12, 11, 10);
+    padding: 2px;
+}
+.book:hover{
+    background-color: transparent;
+    border: 2px solid rgb(12, 11, 10);
+    padding: 2px;
+}
+.about:hover{
+
+    border: 2px  rgb(12, 11, 10);
+    padding: 2px;
+}
+.contact:hover{
+     border: 2px rgb(12, 11, 10);
+    padding: 1px;
+} 
+
+.about1{
+    position: absolute;
+   right: 400px;
+ 
+
+    
+}
+.contact1{
+    position:absolute;
+    right: 150px;
+  
+
+}
+.Body{
+  background-color: skyblue; 
+  border: 2px solid black;
+  padding: 20px; 
+  
+  margin-top: 15px;
+  margin-bottom: 20px;
+  margin-left: 5px;
+
+  height: 40px;
+  width: 96.3%;
+  bottom: o; 
+}
+
+
+.nav2{
+   
+    height: 40px;
+    width: 98.3%;
+    margin-left: 10px;
+    margin-top: -20px;
+}
+.contact{
+    position: absolute;
+    right: 20px;
+}
+
+.about{
+    position: absolute;
+    right:  130px;
+}
+
+/* .contact{
+    position: absolute;
+    right: 20px;
+}
+
+.about{
+    position: absolute;
+    right:  130px;
+} */
+
+.book{
+    position: absolute;
+    right:  15px;
+}
+
+.flight{
+    position: absolute;
+    right:  140px;
+}
+.home{
+    position: absolute;
+    right:  253px;
+}
+.checkin{
+    position: absolute;
+    right:  320px;
+    
+}
+.cancle{
+    position: absolute;
+    right:  400px;
+}
+
+.home:hover{
+    padding: 4px;
+}
+
+.flight:hover{
+    background-color: transparent;
+    /* border: 2px solid rgb(12, 11, 10); */
+    padding: 2px;
+}
+.book:hover{
+    background-color: transparent;
+    /* border: 2px solid rgb(12, 11, 10); */
+    padding: 2px;
+}
+.about:hover{
+
+    border: 2px  rgb(12, 11, 10);
+    padding: 2px;
+}
+.contact:hover{
+     border: 2px rgb(12, 11, 10);
+    padding: 1px;
+} 
+
+.about1{
+    position: absolute;
+   right: 400px;
+ 
+}
+.contact1{
+    position:absolute;
+    right: 150px;
+  
+
+}
+.Body{
+  background-color: skyblue; 
+  border: 2px solid black;
+
+  
+  margin-top: -50px;
+  margin-bottom: 20px;
+  margin-left: 5px;
+
+  height: 40px;
+  width: 96.3%;
+  bottom: o; 
+}
+
+.active{
+    margin: 2px;
+    border: black solid;
+}
+
+
+i{
+    font-size: 30px;
+    padding: 15px;
+    color: #5b5b5b;
+}
+

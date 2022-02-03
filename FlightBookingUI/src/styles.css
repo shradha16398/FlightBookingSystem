@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.footer_about1 p{
+
+    margin: 0px;
+
+    text-align: center;
+
+    padding: 15px 0px;
+
+}
+
+
+.footer_about1{
+    background: #ddd;
+    text-align: center;
+}
+.table{
+    margin: 50px auto!important;
+}

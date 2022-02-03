@@ -1,0 +1,67 @@
+/* 
+@import url('https://fonts.googleapis.com/css2?family=Pushster&display=swap'); */
+.na{
+    color: white;
+}
+.navbar{
+    height: 40px;
+    border: 2px solid white;
+    width: 96.3%;
+    background-color: cadetblue;
+    font-weight: bold;
+    /* font-family:  'Pushster', cursive; */
+     margin-left: 10px; 
+   padding: 10px;
+   /* margin: 20px; */
+   
+   display: flex;
+     
+   /* margin-top: 30px; */
+   /* position: fixed; */
+}
+.contact{
+    position: absolute;
+    right: 20px;
+   
+
+}
+.about{
+    position: absolute;
+    right:  110px;
+    
+}
+.about:hover{
+    background-color: rgb(240, 219, 219);
+    border: 2px solid rgb(12, 11, 10);
+    padding: 2px;
+}
+.contact:hover{
+    background-color: rgb(240, 219, 219);
+    border: 2px solid rgb(12, 11, 10);
+    padding: 2px;
+}
+
+.about1{
+    position: absolute;
+   right: 150px;
+
+    
+}
+.contact1{
+    position:absolute;
+    right: 150px;
+  
+
+}
+.Body{
+  background-color: skyblue; 
+  border: 2px solid black;
+  padding: 20px; 
+  margin-top: 50px;
+  margin-bottom: 20px;
+  margin-left: 30px;
+
+  height: 80px;
+  width: 90.3%;
+  bottom: o; 
+}
